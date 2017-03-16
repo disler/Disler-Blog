@@ -1,0 +1,59 @@
+.blog-display-container{
+ 	width:100%;
+ 	margin:60px auto 25px auto;
+}
+
+.blog-container-iter{
+	margin-top:25px;
+	margin: 25px auto 65px auto;
+	padding-left:5px;
+	width:800px;
+	height:auto;
+	display: flex;
+	flex-direction: row;
+	transition:all 1s ease;
+	/*border-left:1px solid #aaa;*/
+}.blog-container-iter:hover{
+	cursor: pointer;
+	/*border-left:3px solid #aaa;*/
+	opacity: .3;
+}
+.blog-thumbnail-img{
+	width:200px;
+	height:200px;
+}
+.blog-right-container{
+	width:100%;
+	height:100%;
+	text-align: right;
+}
+	.blog-header{
+		margin:0 15px;
+		font-size:45px;
+	}
+	.blog-tags{
+		margin:15px;
+		font-size:20px;
+	}	
+		.tag-span{
+			/*border:1px solid #aaa;*/
+			border-radius:25%;
+			padding:12.5px;
+			margin-right:15px;
+			color:white;
+			box-shadow: 2px 2px 5px #999;
+		}
+		.life-tag-span{
+			background-color: blue;
+		}
+		.programming-tag-span{
+			background-color: red;
+		}
+		.music-tag-span{
+			background-color: green;
+		}
+	.blog-description{
+		margin:0 15px 25px 15px;
+		font-size:20px;
+		color:#777;
+	}

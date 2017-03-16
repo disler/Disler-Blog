@@ -1,0 +1,135 @@
+*{
+	font-family: 'Trirong', serif;
+}
+
+/*hide scroll bar*/
+		html {
+		    /*overflow: scroll;*/
+		    /*overflow-x: hidden;*/
+		    overflow:moz-scrollbars-none;
+		}
+		::-webkit-scrollbar {
+		    width: 0px;  /* remove scrollbar space */
+		    height:0px;
+		    background: transparent;  /* optional: just make scrollbar invisible */
+		}
+		/* optional: show position indicator in red */
+		::-webkit-scrollbar-thumb {
+		    background: #FF0000;
+		}
+/*hide scroll bar*/
+
+.app-container {
+  /*text-align: center;*/
+  width:100%;
+  overflow-x:hidden;
+  position:relative;
+  height:auto;
+  /*transition:height 1.2 ease;*/
+}
+
+.red{
+  color:#FF1133;
+}
+.green{
+  color:#55FF55;
+}
+.blue{
+  color:#00FFFF;
+}
+
+.content-container{
+  margin-top:25px;
+}
+
+.component-wrapper{
+	width:100%;
+}
+
+#landing-component-wrapper{
+}
+
+#picking-a-shirt-component-wrapper{
+	
+}
+
+.hide{
+	display:none;
+}
+.show{
+	display:block;
+}
+
+
+
+/*FX*/
+@keyframes current-to-right{
+	0%{	
+		margin-left:0; 
+		opacity: 1;
+	}
+	100%{	
+		margin-left:100%; 
+		opacity: 0;
+		height:1px;
+	}
+
+}
+
+@keyframes left-to-current{
+	0%{	
+		right:100%;
+		opacity: 0;
+	}
+	100%{	
+		right:0;
+		opacity: 1;
+	}
+}
+
+.left-to-current{
+	/*opacity: 1;*/
+	/*margin-right:100%;*/
+	animation-name:left-to-current;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
+	animation-delay:0; 
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+.current-to-right{
+	opacity: 1;
+	animation-name:current-to-right;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
+	animation-delay:0; 
+	animation-duration: .6s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+	0% {
+	    opacity: 0;
+	}
+	60% {
+	    opacity: 0;
+	}
+	100% {
+	    opacity: 1;
+	}
+}
+
+.fade-in {
+	opacity: 0;
+    animation-name: fade-in;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-delay:.5s;
+	animation-duration: 1.75s;
+	animation-fill-mode: forwards;
+}
+ 
+.fade-in.one {animation-delay: 0; animation-duration:1s;}
+.fade-in.two {animation-delay: 0; animation-duration:2s;}
+.fade-in.three {animation-delay: 0; animation-duration:3s;}
